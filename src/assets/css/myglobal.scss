@@ -1,0 +1,103 @@
+$themeColor:'red';
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+div{
+    display: flex;
+}
+span{
+    font-size: 14px;
+}
+#app{
+    height: 100%;
+}
+.cen-cen{
+    justify-content: center;
+    align-items: center;
+}
+.flex_bet{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.overLine{
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.el-menu{
+    // width: 200px;
+    height: 100%;
+}
+.el-menu-item{
+    
+}
+.el-submenu__title{
+    display: block;
+}
+.el-menu-item,
+.el-submenu{
+    text-align: left;
+}
+// .el-menu-item>span{
+//     text-align: justify;
+//     text-align-last: justify;
+//     min-width: 50px;
+// }
+// 动画
+// global transition css
+
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* breadcrumb transition */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
